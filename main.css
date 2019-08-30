@@ -1,0 +1,43 @@
+
+body{
+    background-color: green;
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+}
+
+#title-box{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2{
+    font-size: 200%;
+    color: yellow;
+    margin-left: 3%
+}
+
+#rules-box{
+    font-size: 150%;
+    color: yellow;
+    margin-left: 1%
+}
+
+#img-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px
+}
+
+#button-box{
+    display: flex;
+    justify-content: center;
+}
+
+#play{
+    font-size: 160%
+}

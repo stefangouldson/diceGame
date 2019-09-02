@@ -8,36 +8,104 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div id="title-box">
-        <h1 id="title">Dice Game</h1>
+
+    <div id="splash-container">
+        <div id="f-box">
+        <h1>Welcome to the Dice Game</h1>
+        <h3>Choose whether you want to play on your own or with others</h3>
+        <button id="open1">Singleplayer</button>
+        <button id="open2">Multiplayer</button>
+        </div>
     </div>
 
-    <h2>Welcome to the Dice Game</h2>
+<!-- Code for singlayer ############################################################################### -->
 
-    <div id="rules-box">
+<div id="singleplayer">
+
+    <h2 class="title">Welcome to the Dice Game</h2>
+
+    <div class="rules-box">
     <ul>
         <li>The rules are simple:</li>
         <li>The goal is to get above 20</li>
         <li>If you roll a one you lose and the game restarts</li>
-    </ol>
+    </ul>
 
     </div>
 
-    <div id="img-box">
-        <img id="dice1" src="./img/dice1.png">
-        <img id="dice2" src="./img/dice2.png">
-        <img id="dice3" src="./img/dice3.png">
-        <img id="dice4" src="./img/dice4.png">
-        <img id="dice5" src="./img/dice5.png">
-        <img id="dice6" src="./img/dice6.png">
+    <div class="img-box">
+        <h1 id="score">Score</h1>
+        <img src="blank.png" id="canvas">
     </div>
 
-    <div id="button-box">
-        <button onclick="" id="play">Roll the dice</button>
+    <div class="button-box">
+        <button onclick="getRandomImg(randArr)" id="play">Roll the dice</button>
     </div>
+
+    <div class="total-box">
+        <div class="background">
+        <h1>Player total</h1>
+        <h1 id="input1">0</h1>
+        </div>
+    </div>
+
+</div>
+
+<div id="multiplayer">
+    <h2 class="title">Welcome to the Dice Game</h2>
+
+    <div class="rules-box">
+            <ul>
+                <li>The rules are simple:</li>
+                <li>The goal is to get above 20</li>
+                <li>If you roll a one you lose and the game restarts</li>
+                <li>The first player to score above 20 wins</li>
+            </ul>   
+    </div>
+<div id="playingArea">
+    <div id="player1-box">
+                <div class="img-box">
+                    <h1 id="game"></h1>
+                    <img src="blank.png" id="canvas1">
+                </div>
+            
+                <div class="button-box">
+                    <button onclick="getRandomImg1(randArr)" id="play">Roll the dice</button>
+                </div>
+            
+                <div class="total-box">
+                    <div class="background">
+                    <h1>Player 1 total</h1>
+                    <h1 id="scoreTotal1">0</h1>
+                    </div>
+                </div>
+                
+
+    </div>
+
+    <div id="player2-box">
+            <div class="img-box">
+                    <h1 id="game1"></h1>
+                    <img src="blank.png" id="canvas2">
+            </div>
+            <div class="button-box">
+                    <button onclick="getRandomImg2(randArr)" id="play">Roll the dice</button>
+            </div>
+
+            <div class="total-box">
+                    <div class="background">
+                    <h1>Player 2 total</h1>
+                    <h1 id="scoreTotal2">0</h1>
+                    </div>
+                </div>
+
+    </div>
+        
+</div>
+
+
 
 <script src="./script.js"></script>
 
 </body>
 </html>
-`

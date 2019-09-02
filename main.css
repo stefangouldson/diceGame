@@ -1,43 +1,120 @@
-
+/* Styling background*/
 body{
-    background-color: green;
+    background-image: linear-gradient(to right, darkgreen, lightgreen);
     margin: 0px;
     padding: 0px;
     background-position: center;
 }
-
-#title-box{
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    font-size: 150%;
-    text-decoration: underline;
+/* Styling splash page */
+#splash-container{
+    background-color: yellow;
+    margin: 5%;
+    padding: 5%;
+    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: solid 8px
 }
 
-h2{
-    font-size: 200%;
+#f-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#open1{
+    background-color: black;
     color: yellow;
-    margin-left: 3%
+    border: solid green;
+    font-size: 100px;
 }
 
-#rules-box{
-    font-size: 150%;
+#open1:hover{
+    background-color: green;
+    color: yellow;
+    border: solid black
+}
+
+#open2{
+    margin-top: 20px;
+    background-color: black;
+    color: yellow;
+    border: solid green;
+    font-size: 100px;
+}
+
+#open2:hover{
+    background-color: green;
+    color: yellow;
+    border: solid black
+}
+
+/* Styling playing page ################################################################## */
+
+.title{
+    font-size: 400%;
+    color: yellow;
+    margin-left: 30%;
+    text-decoration: underline;
+}
+
+.rules-box{
+    font-size: 250%;
     color: yellow;
     margin-left: 1%
 }
 
-#img-box{
+.img-box{
     display: flex;
-    justify-content: space-between;
-    margin: 50px
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+    font-size: 70%
 }
 
-#button-box{
+
+.button-box{
     display: flex;
     justify-content: center;
 }
 
+.total-box{
+    display: flex;
+    margin-top: 3%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    align-items: center;
+    border: solid;
+    border-radius: 20px
+}
+
 #play{
-    font-size: 160%
+    font-size: 150%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: yellow;
+    border:solid;
+}
+
+#play:hover{
+    background-color: black;
+    color: yellow;
+    border: solid yellow
+}
+
+#play:active{
+    transform:translateY(4px)
+}
+
+#playingArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
 }

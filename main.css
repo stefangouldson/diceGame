@@ -16,12 +16,14 @@ body{
     border: solid 8px
 }
 
+/* f stands for fucking because i was very annoyed. Box in the splash page */
 #f-box{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* splash buttons */
 #open1{
     background-color: black;
     color: yellow;
@@ -49,7 +51,7 @@ body{
     border: solid black
 }
 
-/* Styling playing page ################################################################## */
+/* Styling playing page */
 
 .title{
     font-size: 400%;
@@ -85,6 +87,7 @@ body{
     align-items: center;
 }
 
+/* background of score box */
 .background{
     display: flex;
     flex-direction: column;
@@ -94,6 +97,7 @@ body{
     border-radius: 20px
 }
 
+/* play button */
 #play{
     font-size: 150%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

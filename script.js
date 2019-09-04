@@ -3,7 +3,7 @@
     //define images in js
     let imageInput=document.getElementById("canvas")
 
-
+    // put images in an array
 let randArr=[
     "./img/dice1.png",
     "./img/dice2.png",
@@ -12,15 +12,19 @@ let randArr=[
     "./img/dice5.png",
     "./img/dice6.png"]
 
+    // define variables
 let total=0
 let input1=document.getElementById("input1")
 let input2=document.getElementById("score")
 
-function getRandomImg(imgArr){
-    let x=(6*Math.random())
-    let y=Math.floor(x)
-    img=imgArr[y]
 
+//function that gets random dice
+function getRandomImg(imgArr){
+    let x=(6*Math.random())    //generates random number between 0-6
+    let y=Math.floor(x)        //rounds down to 0-5
+    img=imgArr[y]              //sets img=to random image
+
+//conditions for each dice value
     if (y==0){
         input2.textContent="You lose! Try again?"
         total=0
@@ -45,7 +49,7 @@ function getRandomImg(imgArr){
         alert("error")
         console.error("Somethings wrong")
     } console.log(total)
-    
+    //if player wins
     if (total>20){
         alert("You win!")
         input2.textContent="You won! Roll again?"
@@ -54,22 +58,24 @@ function getRandomImg(imgArr){
 }
 
 //splash page
-
+//hide single and multiplayer div
 document.getElementById("singleplayer").style.display="none"
 document.getElementById("multiplayer").style.display="none"
 
+//if singleplayer chosen
 open1.addEventListener("click",()=>{
     document.getElementById("splash-container").style.display="none"
     document.getElementById("singleplayer").style.display="block"
 })
 
+//if multiplayer chosen
 open2.addEventListener("click",()=>{
     document.getElementById("splash-container").style.display="none"
     document.getElementById("multiplayer").style.display="block"
 })
 
 
-//multiplayer
+//multiplayer- exact same code with variable names changed
 
 //player 1
 

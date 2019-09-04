@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- splash page where you choose single or multiplayer -->
     <div id="splash-container">
         <div id="f-box">
         <h1>Welcome to the Dice Game</h1>
@@ -18,7 +19,7 @@
         </div>
     </div>
 
-<!-- Code for singlayer ############################################################################### -->
+<!-- Code for singlayer -->
 
 <div id="singleplayer">
 
@@ -33,15 +34,18 @@
 
     </div>
 
+    <!-- where dice will appear -->
     <div class="img-box">
         <h1 id="score">Score</h1>
         <img src="blank.png" id="canvas">
     </div>
 
+    <!-- Play button -->
     <div class="button-box">
         <button onclick="getRandomImg(randArr)" id="play">Roll the dice</button>
     </div>
 
+    <!-- display score box -->
     <div class="total-box">
         <div class="background">
         <h1>Player total</h1>
@@ -50,6 +54,8 @@
     </div>
 
 </div>
+
+<!-- multiplayer section -->
 
 <div id="multiplayer">
     <h2 class="title">Welcome to the Dice Game</h2>
@@ -62,7 +68,8 @@
                 <li>The first player to score above 20 wins</li>
             </ul>   
     </div>
-<div id="playingArea">
+    <!-- playing area made to keep player 1 and 2 align on page -->
+<div id="playingArea">      
     <div id="player1-box">
                 <div class="img-box">
                     <h1 id="game"></h1>
@@ -102,10 +109,11 @@
     </div>
         
 </div>
-
+<!-- end of playinhg area -->
 
 
 <script src="./script.js"></script>
 
 </body>
 </html>
+
